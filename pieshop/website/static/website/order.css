@@ -1,0 +1,104 @@
+input {
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: solid 1px #999;
+    border-radius: 2px;
+    width: 100%;
+}
+
+textarea {
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: solid 1px #999;
+    border-radius: 2px;
+    resize: none;
+}
+
+label {
+    font-weight: 600;
+}
+
+button[type="reset"] {
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background: transparent;
+    border: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    border: solid 1px #999;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+button[type="submit"]:hover{
+    border: solid 1px #999;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgb(172, 172, 172);
+}
+
+button[type="submit"]:hover{
+    border: solid 1px #999;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgb(172, 172, 172);
+}
+
+button[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+select{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+
+.pie > img {
+    margin-top: 10px;
+    height: 200px;
+    width: auto;
+}
+
+.columns{
+    padding: 20px 10px 20px 30px;
+    margin-top: 20px;
+    display: block;
+    background-color: bisque;
+    border: 1px solid rgb(173, 141, 100);
+    border-radius: 40%;
+    /* border-color: black; */
+}
+
+.title, .price, .desc{
+    display: inline;
+    font-weight: 900;
+    margin: 20px 20px 20px 0px;
+}
+
+/* .title{
+    margin: 10px 50px 0px 0px;
+} */
+/* .price{
+    right: 100px;
+} */
+
+
+@media only screen and (min-width: 768px) {
+
+    article{
+        width: 350px;
+    }
+}

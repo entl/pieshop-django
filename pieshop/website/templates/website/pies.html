@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'website/pies.css' %}">
+{% endblock %}
+
+{% block title %}Pies | Bethany's Pie Shop{% endblock %}
+
+{% block content %}
+    <aside><img src="{% static 'website/images/logo.png' %}" alt="Bethany's Pie Shop"></aside>
+    <article>
+        <h1>Pies</h1>
+        <section class="columns-desktop">
+            <div class="grid-container">
+                {% for pie in pieList %}
+                <div class="pie grid-item">
+                    <img src="{% get_media_prefix %}{{pie.image}}">
+                    <div class="columns">
+                        <div class="pk" type="hidden" value="{{pie.pk}}"></div>
+                        <div class="title">{{pie.title}}</div>
+                        <div class="price">{{pie.price}}</div>
+                    </div>
+                    <p class="desc">{{pie.desc}}</p>
+                    <button data-order="{{pie.title}}">Order</button>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </article>
+    <script src="{% static 'website/js/pies.js' %}" type="text/javascript"></script>
+{% endblock %}
